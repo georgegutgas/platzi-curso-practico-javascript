@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupones</title>
+    
+</head>
+<body>
+    <section>
+        <h1>Descuento con Cupones</h1>
+
+        <form action="">
+            <label for="InputPrice">
+                Selecciona el precio del producto: 
+            </label>
+            <input id="InputPrice" type="number">
+
+            <label for="InputCoupons">
+                Selecciona el cupon que deseas: 
+            </label>
+            <input id="InputCoupons" list="coupons">
+            <datalist id="coupons">
+                <option value="georgegutgas"></option>
+                <option value="juanDC"></option>
+                <option value="GNDX"></option>
+            </datalist>
+
+            <button type="button" onclick="onClickCoupons()">Cambiar cupon</button>
+            <p id="ResultP"></p>
+        </form>
+    </section>
+
+
+    
+    <script src="./cupones.js"></script>
+</body>
+</html>

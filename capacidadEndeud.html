@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Capacidad Endeudamiento</title>
+    <link rel="stylesheet" href="./capacidadEndeud.css">
+</head>
+<body>
+    <h1>Capacidad de endeudamiento</h1>
+    <p id="inputH1"></p>
+    <main class="container">
+        <section class="section-container">
+            <form class="section-container__form" action="">
+                <div class="section-container__form--elements">
+                    <h2>Ingresos</h2>
+                    <label for="InputIngresos">
+                        Cantidad
+                    </label>
+                    <input type="number" id="InputIngresos">
+                </div>
+                <div class="section-container__form--elements">
+                    <label for="InputTiposIngresos">
+                        Tipos de Ingreso
+                    </label>
+                    <input id="InputTiposIngresos" list="tiposIngresos">
+                    <datalist id="tiposIngresos">
+                        <option value="Tarjeta de Débito"></option>
+                        <option value="Efectivo"></option>
+                    </datalist>
+                </div>
+
+                
+                <button type="button" class="button" onclick="agregarIngresos()">Agregar</button>
+            </form>
+        </section>
+    
+        <section class="section-container">
+            <form class="section-container__form" action="">
+                <div class="section-container__form--elements">
+                    <h2>Gastos Fijos</h2> 
+                    <label for="InputGastos">
+                        Cantidad
+                    </label>
+                    <input type="number" id="InputGastos">
+                </div>
+                
+                <div class="section-container__form--elements">
+                    <label for="InputTiposGastos">
+                        Tipos de Gastos
+                    </label>
+                    <input id="InputTiposGastos" list="gastos">
+                    <datalist id="gastos">
+                        <option value="Hogar"></option>
+                        <option value="Entretenimiento"></option>
+                        <option value="Transporte"></option>
+                    </datalist>
+                </div>
+                
+
+                <button type="button" class="button" onclick="agregarGastos()">Agregar</button>
+
+            </form>
+        </section>
+    </main>
+    <div class="button-container">
+        <button type="button" class="button button-calc" onclick="calcularCapacidadEndeud()">Calcular</button>
+    </div>
+
+    <section class="result-section">
+        <div class="result-section__content">
+            <h3 id="h2ResultIngresos"></h3>
+            <p id="resultIngresos"></p>
+        </div>
+        <div class="result-section__content">
+            <h3 id="h2ResultGastos"></h3>
+            <p id="resultGastos"></p>
+        </div>
+        
+    </section>
+    
+
+    <script src="./capacidadEndeud.js"></script>
+</body>
+</html>

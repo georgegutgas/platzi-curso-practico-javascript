@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    background-color: gold;
+
+}
+
+.header {
+    /* background-color: blue; */
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.container {
+    /* background-color: yellow; */
+    height: 85vh;
+    display: flex;
+    padding: 40px 20px;
+    /* flex-wrap: wrap; */
+    /* align-content: flex-start; */
+}
+
+.mini-container {
+    /* width: 50%; */
+    /* height: calc(85vh / 2); */
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.mini-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__form .input{
+    margin-bottom: 10px;
+    color: black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container .button {
+    margin: 0 10px;
+    height: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
+.square {
+    background-color: tomato;
+}
+
+.triangle {
+    background-color: royalblue;
+    order: 1;
+
+}
+
+.circle{
+    background-color: magenta;
+
+}
+
